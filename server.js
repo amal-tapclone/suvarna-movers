@@ -60,7 +60,7 @@ app.post("/contact-form", async (req, res) => {
 
   const data = {
     from: "mailserviceSensRes@gmail.com",
-    to: "amalc.plr@gmail.com",
+    to: "suvarna.packersandmovers@gmail.com",
     subject: "New Appointment Request",
     html: output,
   };

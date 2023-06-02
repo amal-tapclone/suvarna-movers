@@ -156,6 +156,18 @@ html {
   }
 }
 
+/* nav */
+.phone-call {
+  display: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .phone-call {
+    display: block;
+  }
+}
 /* testimonial */
 .col-center {
   margin: 0 auto;
@@ -241,8 +253,6 @@ html {
 }
 
 /* end testimonial */
-
-
 
 article,
 aside,
@@ -2910,6 +2920,8 @@ header.one-page .navbar-nav > li > a span {
   background: #fafafa;
 }
 .appointment-form-wrapper {
+  width: 90%;
+  margin: 1% auto;
   background: #ffffff;
   padding: 0px 0px 28px;
   margin-bottom: 100px;
@@ -2921,7 +2933,7 @@ header.one-page .navbar-nav > li > a span {
 .appointment-form-wrapper .appointment-form-heading {
   position: relative;
   background: #05c7f2;
-  padding: 30px;
+  padding: 10px;
   margin: -1px -1px 48px -1px;
 }
 .appointment-form-wrapper .appointment-form-heading .form-title {

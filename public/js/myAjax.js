@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       .then((data) => {
         myForm.reset();
         if (data.success) {
-          Swal.fire("", "Thank you for submitting your request!", "success");
+          Swal.fire("Good job!", "Thank you for submitting your request!", "success");
         }
         //display a success message or redirect to another page
       })

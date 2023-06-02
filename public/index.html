@@ -172,6 +172,7 @@
                 <li>
                   <a href="#our-gallery" title="About Us">Gallery</a>
                 </li>
+                
 
                 <!-- <li class="drop">
                   <a href="service.html">Services</a>
@@ -262,7 +263,12 @@
               </ul>
               <!-- end .nav .navbar-nav  -->
             </div>
-            <div class="navbar-header pull-right">
+            <div class="navbar-header pull-right" >
+              <div class="phone-call">
+                <a href="tel:+918848049826" style="color: white;"
+                  ><i class="fa fa-phone"> +91 88480 49826</i></a
+                >
+              </div>
               <button
                 type="button"
                 class="navbar-toggle"
@@ -273,15 +279,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
               <div class="navbar-contact hidden-sm hidden-xs">
                 <ul>
                   <li>
-                    <a
-                      class="btn btn-theme"
-                      href="#appointment-form"
-                      title="GET FREE QUOTE"
-                      >GET FREE QUOTE</a
-                    >
+                    <a class="btn btn-theme" href="tel:+918848049826">
+                      <i class="fa fa-phone"></i> +91 88480 49826
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -307,7 +311,9 @@
               </h2>
               <h3>Most Trusted Packers and Movers in Kochi</h3>
               <div class="slider-button">
-                <a href="#" class="btn btn-slider">MAKE ORDER NOW !</a>
+                <a href="#appointment-form" class="btn btn-slider"
+                  >MAKE ORDER NOW !</a
+                >
               </div>
             </div>
           </div>
@@ -417,6 +423,7 @@
 
     <!--  COUNTER SECTION  -->
     <section
+      id="appointment-form"
       class="section-content-block"
       style="
         background-image: url('./images/bg_about_us.jpg');
@@ -429,22 +436,112 @@
       <div class="" style="width: 90%; margin: 0 auto">
         <div class="row">
           <div class="col-md-5 col-sm-12">
-            <div class="section-counter-heading">
-              <h2 style="margin-bottom: 25px">Why Choose Us?</h2>
-              <p
-                class="text-light-color"
-                style="padding: 0 2.9rem 0 0; margin-bottom: 40px"
-              >
-                We have years of experience in the industry and we present you
-                best packers and movers of your city. Verified & 100% Safe
-                Packers and Movers in your city. !!!
-              </p>
-              <a class="btn btn-theme btn-theme-invert" href="#">Get Started</a>
+            <div class="appointment-form-wrapper clearfix">
+              <div class="appointment-form-heading">
+                <p class="form-title text-center">BOOK AN APPOINTMENT</p>
+              </div>
+              <form class="appoinment-form" id="moving-form" method="POST">
+                <div class="form-group col-md-6">
+                  <input
+                    id="move_from"
+                    class="form-control"
+                    name="move_from"
+                    placeholder="Moving From"
+                    type="text"
+                    required=""
+                  />
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    id="move_to"
+                    class="form-control"
+                    placeholder="Moving To"
+                    name="move_to"
+                    type="text"
+                    required=""
+                  />
+                  <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <input
+                    id="your_date"
+                    class="form-control"
+                    name="your_date"
+                    placeholder=" Moving Date"
+                    type="text"
+                  />
+                  <i class="fa fa-calendar-o"></i>
+                </div>
+                <div class="form-group col-md-12">
+                  <input
+                    id="user_name"
+                    name="user_name"
+                    class="form-control"
+                    placeholder="Name"
+                    type="text"
+                    required=""
+                  />
+                  <i class="fa fa-user-o"></i>
+                </div>
+                <div class="form-group col-md-12">
+                  <input
+                    id="email_user"
+                    name="email_user"
+                    class="form-control"
+                    placeholder="Email"
+                    type="email"
+                    required=""
+                  />
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <input
+                    id="user_phone"
+                    name="user_phone"
+                    class="form-control"
+                    placeholder="Phone"
+                    type="text"
+                    required=""
+                  />
+                  <i class="fa fa-phone"></i>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <textarea
+                    id="user_text"
+                    name="user_text"
+                    class="form-control"
+                    placeholder="Enter your text"
+                    rows="2"
+                  ></textarea>
+                  <i class="fa fa-message"></i>
+                </div>
+
+                <div
+                  class="form-group col-md-12 col-sm-12 col-xs-12 text-center"
+                >
+                  <button
+                    style="padding: 6px 10px"
+                    id="btn_submit"
+                    class="btn btn-theme btn-theme-invert"
+                    type="submit"
+                  >
+                    Get Appointment
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
           <!-- end .col-md-6  -->
 
           <div class="col-md-7 col-sm-12" style="color: white">
+            <div class="section-counter-heading">
+              <h2 style="margin-bottom: 25px">Why Choose Us?</h2>
+            </div>
+
             <div class="wcu-text row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="wcu-text-box wcu-text-box-blue">
@@ -453,8 +550,8 @@
                   </div>
                   <div class="wcu-text-box-title">Customer Support</div>
                   <div class="wcu-text-box-desc">
-                    Suvarna Packers and Movers Kochi: Friendly, knowledgeable
-                    team for superior customer support and assistance.
+                    Friendly & knowledgeable staff ready to assist with any
+                    questions or concerns. Your satisfaction is our priority!
                   </div>
                 </div>
               </div>
@@ -466,9 +563,8 @@
                   </div>
                   <div class="wcu-text-box-title">Safe & Fast</div>
                   <div class="wcu-text-box-desc">
-                    Suvarna Movers: Safe, fast, skilled handling of delicate,
-                    valuable items including artwork and antiques by experienced
-                    professionals.
+                    Safe & fast moving services by experienced professionals.
+                    Skilled in handling delicate items like artwork & antiques.
                   </div>
                 </div>
               </div>
@@ -480,8 +576,9 @@
                   </div>
                   <div class="wcu-text-box-title">Dedicated Team</div>
                   <div class="wcu-text-box-desc">
-                    Suvarna Packers and Movers Kochi: Friendly, knowledgeable
-                    team for superior customer support and assistance.
+                    Expert teams for seamless shifting: homes, offices,
+                    classrooms, corporates, schools, and residences. Client
+                    satisfaction is our priority!
                   </div>
                 </div>
               </div>
@@ -599,7 +696,9 @@
 
         <div class="row">
           <div class="col-md-12 col-sm-12 text-center">
-            <a href="#" class="btn btn-theme">ORDER TODAY NOW !</a>
+            <a href="#appointment-form" class="btn btn-theme"
+              >ORDER TODAY NOW !</a
+            >
           </div>
         </div>
       </div>
@@ -743,137 +842,13 @@
           <!--  end .col-lg-8 col-md-8 col-sm-12  -->
         </div>
         <!-- end row  -->
-
-        <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <a href="#" class="btn btn-theme">Load All Services</a>
-          </div>
-        </div>
       </div>
       <!--  end .container  -->
     </section>
     <!--  end .section-content-block -->
 
     <!--  SECTION APPOINTMENT   -->
-    <section
-      id="appointment-form"
-      class="section-content-block section-appointment-bg no-bottom-padding"
-    >
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs hidden-md"
-          >
-            <figure class="appoinment-person wow fadeInLeft">
-              <img src="images/appointment_person1.png" alt="" />
-            </figure>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="appointment-form-wrapper clearfix">
-              <div class="appointment-form-heading">
-                <p class="form-title text-center">BOOK AN APPOINTMENT</p>
-              </div>
-              <form class="appoinment-form" id="moving-form" method="POST">
-                <div class="form-group col-md-6">
-                  <input
-                    id="move_from"
-                    class="form-control"
-                    name="move_from"
-                    placeholder="Moving From"
-                    type="text"
-                    required=""
-                  />
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    id="move_to"
-                    class="form-control"
-                    placeholder="Moving To"
-                    name="move_to"
-                    type="text"
-                    required=""
-                  />
-                  <i class="fa fa-arrow-left"></i>
-                </div>
 
-                <div class="form-group col-md-12">
-                  <input
-                    id="your_date"
-                    class="form-control"
-                    name="your_date"
-                    placeholder=" Moving Date"
-                    type="text"
-                  />
-                  <i class="fa fa-calendar-o"></i>
-                </div>
-                <div class="form-group col-md-12">
-                  <input
-                    id="user_name"
-                    name="user_name"
-                    class="form-control"
-                    placeholder="Name"
-                    type="text"
-                    required=""
-                  />
-                  <i class="fa fa-user-o"></i>
-                </div>
-                <div class="form-group col-md-12">
-                  <input
-                    id="email_user"
-                    name="email_user"
-                    class="form-control"
-                    placeholder="Email"
-                    type="email"
-                    required=""
-                  />
-                  <i class="fa fa-envelope-o"></i>
-                </div>
-
-                <div class="form-group col-md-12">
-                  <input
-                    id="user_phone"
-                    name="user_phone"
-                    class="form-control"
-                    placeholder="Phone"
-                    type="text"
-                    required=""
-                  />
-                  <i class="fa fa-phone"></i>
-                </div>
-
-                <div class="form-group col-md-12">
-                  <textarea
-                    id="user_text"
-                    name="user_text"
-                    class="form-control"
-                    placeholder="Enter your text"
-                    rows="2"
-                  ></textarea>
-                  <i class="fa fa-message"></i>
-                </div>
-
-                <div
-                  class="form-group col-md-12 col-sm-12 col-xs-12 text-center"
-                >
-                  <button
-                    id="btn_submit"
-                    class="btn btn-theme btn-theme-invert"
-                    type="submit"
-                  >
-                    Get Appointment
-                  </button>
-                </div>
-              </form>
-            </div>
-            <!-- end .appointment-form-wrapper  -->
-          </div>
-          <!--  end .col-lg-6 -->
-        </div>
-        <!--  end .row  -->
-      </div>
-      <!--  end .container -->
-    </section>
     <!--  end .appointment-section  -->
 
     <!--  GALLERY CONTENT  -->
@@ -1093,13 +1068,13 @@
             </div>
             <!--  end .col-md-3 col-sm-6 -->
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="footer-widget" style="width: 90%">
+              <!-- <div class="footer-widget" style="width: 90%">
                 <div class="sidebar-widget-wrapper">
                   <div class="footer-widget-header clearfix">
                     <h3>Get Newsletter</h3>
                   </div>
                   <p>Signup for regular newsletter and stay up-to-date.</p>
-                  <form id="mc-form" class="mc-form fix" action="#">
+                  <form id="mc-form" class="mc-form fix" >
                     <div class="newsletter-form">
                       <input
                         id="mc-email"
@@ -1113,7 +1088,7 @@
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!--  end .col-md-3 col-sm-6 -->
 
@@ -1159,6 +1134,8 @@
               <p class="copyright-text">
                 <!-- Copyright 2017 - Move Fast by BlueWindLab. All Rights Reserved. -->
                 © <span id="current-year"></span> Suvarna Packers And Movers
+                <br />
+                By Tapclone
               </p>
             </div>
             <!-- end .col-sm-6  -->
