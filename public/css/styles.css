@@ -110,6 +110,19 @@ video {
   vertical-align: baseline;
 }
 
+.testBorder {
+  border: 2px solid red;
+}
+.placeItCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.placeItCenter img{
+ width: 40%;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
