@@ -113,15 +113,14 @@ video {
 .testBorder {
   border: 2px solid red;
 }
-.placeItCenter{
+.placeItCenter {
   display: flex;
   justify-content: center;
 }
 
-.placeItCenter img{
- width: 40%;
+.placeItCenter img {
+  width: 40%;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -4605,6 +4604,7 @@ footer:before {
 }
 footer p {
   color: #ffffff;
+  margin: 0 0 0px;
 }
 footer a {
   color: #ffffff;
