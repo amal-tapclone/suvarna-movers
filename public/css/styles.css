@@ -4602,13 +4602,16 @@ footer:before {
   width: 100%;
   height: 2000px;
 }
+
 footer p {
   color: #ffffff;
   margin: 0 0 6px;
 }
+
 footer a {
   color: #ffffff;
 }
+
 footer a:hover {
   color: #05c7f2;
 }
